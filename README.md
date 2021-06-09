@@ -6,4 +6,31 @@ The application provides a REST API to manage books.
 
 ## Usage
 
+Create book:
+
+```bash
+$ curl -X POST -H "Content-Type: application/json" --data "{\"title\": \"Angels and Demons\", \"author\": \"Dan Brown\", \"rating\": 4}" http://localhost:3000/api/v1/book
+```
+
+List all books:
+
+```bash
+$ curl http://localhost:3000/api/v1/book
+```
+
+List book with a given ID:
+
+```bash
+$ curl http://localhost:3000/api/v1/book/1
+```
+
+Delete book with a given ID:
+
+```bash
+$ curl -X DELETE http://localhost:3000/api/v1/book/1
+```
+
 ## TODO
+
+Implement update
+
