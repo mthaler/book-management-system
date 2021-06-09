@@ -24,6 +24,12 @@ List book with a given ID:
 $ curl http://localhost:3000/api/v1/book/1
 ```
 
+Update book:
+
+```bash
+$ curl -X POST -H "Content-Type: application/json" --data "{\"title\": \"Angels and Demons\", \"author\": \"Dan Brown\", \"rating\": 5}" http://localhost:3000/api/v1/book/1
+```
+
 Delete book with a given ID:
 
 ```bash
