@@ -36,7 +36,4 @@ Delete book with a given ID:
 $ curl -X DELETE http://localhost:3000/api/v1/book/1
 ```
 
-## TODO
-
-Implement update
 
